@@ -1,0 +1,18 @@
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files (Contains infrastructure secrets)
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Ignore any files containing your API keys or passwords
+terraform.tfvars
+secrets.auto.tfvars
+
+# Ignore SSH keys if you store them locally
+id_ed25519
+id_ed25519.pub
