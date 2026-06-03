@@ -1,4 +1,4 @@
-# Automated Defensive Security Lab (IaC)
+# Automated Lab (IaC)
 
 ## Project Overview
 This repository contains an Infrastructure as Code (IaC) pipeline that automates the provisioning of secure Fedora Linux nodes on a Proxmox Virtual Environment. It transforms a bare-metal hypervisor into a ready-to-use, SSH-accessible server environment in under 45 seconds, eliminating manual provisioning errors and allowing for rapid deployment.
@@ -13,7 +13,7 @@ graph LR
         direction LR
         Router[pfSense Firewall]
         Switch[Internal Virtual Switch<br/>10.0.0.x]
-        Fedora[Automated Fedora Node<br/>Payload]
+        Fedora[Automated Fedora Node]
         
         Router -->|Routes Traffic| Switch
         Switch -->|Connects| Fedora
@@ -42,7 +42,7 @@ To run this pipeline, the following infrastructure must be present:
 
 **1. Clone the repository**
 ```bash
-git clone [https://github.com/adop05/proxmox_automation.git](https://github.com/adop05/proxmox_automation.git)
+git clone https://github.com/adop05/proxmox_automation.git
 cd proxmox_automation
 ```
 
