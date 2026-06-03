@@ -58,7 +58,7 @@ ssh_public_key           = "ssh-ed25519 AAAAC3N... your-key"
 **3. Costumize Network Configuration**
 By default, the `main.tf` blueprint is configured for an isolated internal lab network (`10.0.0.x`). If you are deploying this to a standard flat home network, you **must** update the network settings before applying.
 
-Open `variables.tf` and locate the `vm_ip_address`, `vm_gateway` and `vm_network_bridge` variables. Update them to match your physical network:
+Open `variables.tf` and locate the `vm_ip_address`, `vm_gateway` and `vm_network_bridge` variables. Update them to match your physical network.
 
 **4. Initialize and Deploy**
 ```bash
